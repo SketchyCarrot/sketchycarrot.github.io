@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Election Results</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="img/logo.jpg" alt="Election Logo" class="logo">
+                <h1>Election Headquarters</h1>
+            </div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="results-central.html">Live Results (Central Panel)</a></li>
+                    <li><a href="results-councillor.html">Live Results (Councillor)</a></li>
+                    <li><a href="statistics.html" class="active">Statistics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <h2>Gender Statistics</h2>
+            <p>Gender ratio breakdown for candidates and voters.</p>
+            
+            <div class="statistics-container">
+                <!-- Central Panel Candidates -->
+                <div class="stat-card" id="central-panel-chart">
+                    <h3>Central Panel Candidates</h3>
+                    <div class="pie-chart-container"></div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #001f3f;"></span>
+                            <span>Male: 50%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #000000;"></span>
+                            <span>Female: 50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Councillor Candidates -->
+                <div class="stat-card" id="councillor-chart">
+                    <h3>Councillor Candidates</h3>
+                    <div class="pie-chart-container"></div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #001f3f;"></span>
+                            <span>Male: 50%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #000000;"></span>
+                            <span>Female: 50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voters -->
+                <div class="stat-card" id="voters-chart">
+                    <h3>Voters</h3>
+                    <div class="pie-chart-container"></div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #001f3f;"></span>
+                            <span>Male: 50%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #000000;"></span>
+                            <span>Female: 50%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Election Committee. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/statistics.js"></script>
+</body>
+</html>
+

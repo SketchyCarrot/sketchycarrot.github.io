@@ -1,0 +1,42 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "School of Life Sciences (SLL&CS)",
+  "candidates": [
+    {
+      "id": "sll1",
+      "name": "MD MUSHARRAF",
+      "votes": 0
+    },
+    {
+      "id": "sll2",
+      "name": "MOHD ASLAM",
+      "votes": 0
+    },
+    {
+      "id": "sll3",
+      "name": "NEERAJ KUMAR",
+      "votes": 0
+    },
+    {
+      "id": "sll4",
+      "name": "PRATEEK SINGH JHA",
+      "votes": 0
+    },
+    {
+      "id": "sll5",
+      "name": "PURANJAI CHAUHAN",
+      "votes": 0
+    },
+    {
+      "id": "sll6",
+      "name": "RAJSHREE DEWAL",
+      "votes": 0
+    },
+    {
+      "id": "sll7",
+      "name": "RAVI RANJAN KUMAR",
+      "votes": 0
+    }
+  ]
+}
+

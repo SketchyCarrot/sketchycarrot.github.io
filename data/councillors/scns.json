@@ -1,0 +1,32 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "School of Computer & Systems Sciences (SCNS)",
+  "candidates": [
+    {
+      "id": "scns1",
+      "name": "ISTKHAR KHAN",
+      "votes": 0
+    },
+    {
+      "id": "scns2",
+      "name": "ROOPAL PAL",
+      "votes": 0
+    },
+    {
+      "id": "scns3",
+      "name": "LAKSHY GUPTA",
+      "votes": 0
+    },
+    {
+      "id": "scns4",
+      "name": "SANGEETA MISTRI",
+      "votes": 0
+    },
+    {
+      "id": "scns5",
+      "name": "ADARSH SINGH",
+      "votes": 0
+    }
+  ]
+}
+

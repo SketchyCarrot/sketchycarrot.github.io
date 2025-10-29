@@ -1,0 +1,42 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "position": "President",
+  "candidates": [
+    {
+      "id": "pres1",
+      "name": "ADITI MISHRA",
+      "votes": 0
+    },
+    {
+      "id": "pres2",
+      "name": "ANGAD SINGH",
+      "votes": 0
+    },
+    {
+      "id": "pres3",
+      "name": "RAJ RATAN RAJORIYA",
+      "votes": 0
+    },
+    {
+      "id": "pres4",
+      "name": "SHINDE VIJAYALAXMI VYANKAT RAO",
+      "votes": 0
+    },
+    {
+      "id": "pres5",
+      "name": "SHIRSHAVA INDU",
+      "votes": 0
+    },
+    {
+      "id": "pres6",
+      "name": "VIKAS PATEL",
+      "votes": 0
+    },
+    {
+      "id": "pres7",
+      "name": "VIKASH",
+      "votes": 0
+    }
+  ]
+}
+

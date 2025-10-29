@@ -1,0 +1,42 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "School of Social Sciences (SSS)",
+  "candidates": [
+    {
+      "id": "sss1",
+      "name": "ABHISHEK KUMAR",
+      "votes": 0
+    },
+    {
+      "id": "sss2",
+      "name": "AJIT MEENA",
+      "votes": 0
+    },
+    {
+      "id": "sss3",
+      "name": "ASHUTOSH MAHOUR",
+      "votes": 0
+    },
+    {
+      "id": "sss4",
+      "name": "DEEKSHA GIRI",
+      "votes": 0
+    },
+    {
+      "id": "sss5",
+      "name": "GOWRI KOLAL",
+      "votes": 0
+    },
+    {
+      "id": "sss6",
+      "name": "ISHAN SANJEEV THAKUR",
+      "votes": 0
+    },
+    {
+      "id": "sss7",
+      "name": "JAYANT KUMAR",
+      "votes": 0
+    }
+  ]
+}
+

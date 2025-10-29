@@ -1,0 +1,37 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "School of Physical Sciences (SPS)",
+  "candidates": [
+    {
+      "id": "sps1",
+      "name": "ABHISHEK KUMAR",
+      "votes": 0
+    },
+    {
+      "id": "sps2",
+      "name": "ASHISH SINGH",
+      "votes": 0
+    },
+    {
+      "id": "sps3",
+      "name": "ISHITA SHUBHA",
+      "votes": 0
+    },
+    {
+      "id": "sps4",
+      "name": "MANISHA SAINI",
+      "votes": 0
+    },
+    {
+      "id": "sps5",
+      "name": "PRIYANSHU BAIRWA",
+      "votes": 0
+    },
+    {
+      "id": "sps6",
+      "name": "PRIYANSHU SAROJ",
+      "votes": 0
+    }
+  ]
+}
+
