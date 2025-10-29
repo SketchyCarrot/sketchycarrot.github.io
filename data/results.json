@@ -1,0 +1,62 @@
+{
+  "lastUpdated": "2025-10-29T14:30:00Z",
+  "centralPanel": [
+    {
+      "id": "c1",
+      "name": "Candidate Alpha",
+      "votes": 1250
+    },
+    {
+      "id": "c2",
+      "name": "Candidate Bravo",
+      "votes": 1180
+    },
+    {
+      "id": "c3",
+      "name": "Candidate Charlie",
+      "votes": 975
+    }
+  ],
+  "councillor": [
+    {
+      "school": "School of Engineering",
+      "candidates": [
+        {
+          "id": "s1c1",
+          "name": "John Smith",
+          "votes": 215
+        },
+        {
+          "id": "s1c2",
+          "name": "Priya Sharma",
+          "votes": 240
+        }
+      ]
+    },
+    {
+      "school": "School of Arts and Sciences",
+      "candidates": [
+        {
+          "id": "s2c1",
+          "name": "Michael Lee",
+          "votes": 305
+        },
+        {
+          "id": "s2c2",
+          "name": "Aisha Khan",
+          "votes": 290
+        }
+      ]
+    },
+    {
+      "school": "School of Business",
+      "candidates": [
+        {
+          "id": "s3c1",
+          "name": "David Chen",
+          "votes": 180
+        }
+      ]
+    }
+  ]
+}
