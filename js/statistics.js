@@ -1,90 +1,190 @@
 // Statistics page functionality
 document.addEventListener("DOMContentLoaded", () => {
-    // For now, using 50-50 split as requested
-    // This can be updated later to calculate from actual candidate data
-    
-    const stats = {
-        centralPanel: { male: 50, female: 50 },
-        councillor: { male: 50, female: 50 },
-        voters: { male: 50, female: 50 }
-    };
+    const centralPanelChart = document.getElementById('central-panel-chart');
+    const councillorChart = document.getElementById('councillor-chart');
+    const votersChart = document.getElementById('voters-chart');
+    const centralPanelLegend = document.getElementById('central-panel-legend');
+    const councillorLegend = document.getElementById('councillor-legend');
+    const votersLegend = document.getElementById('voters-legend');
+    const lastUpdatedSpan = document.getElementById('last-updated');
 
-    // Function to create a pie chart SVG path for given percentages
-    function createPieChartSVG(malePercent, femalePercent, chartId) {
-        const radius = 80;
+    // Central panel file names
+    const centralPanelFiles = [
+        'president.json',
+        'vice-president.json',
+        'general-secretary.json',
+        'joint-secretary.json'
+    ];
+
+    // Councillor file names
+    const councillorFiles = [
+        'sls.json',
+        'soe.json',
+        'sps.json',
+        'sss.json',
+        'scns.json',
+        'chosching-lazes.json',
+        'scmm.json',
+        'sll-cs.json'
+    ];
+
+    // Helper function to fetch a JSON file
+    async function fetchJSONFile(path) {
+        const response = await fetch(`${path}?v=${new Date().getTime()}`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status} for ${path}`);
+        }
+        return await response.json();
+    }
+
+    // Function to create SVG pie chart
+    function createPieChart(svgElement, malePercent, femalePercent, colors) {
+        const radius = 90;
         const centerX = 100;
         const centerY = 100;
         
-        // Calculate angle for male percentage (navy blue)
+        // Clear previous content
+        svgElement.innerHTML = '';
+        
+        // Calculate angles
         const maleAngle = (malePercent / 100) * 360;
-        const maleAngleRad = (maleAngle * Math.PI) / 180;
+        const femaleAngle = (femalePercent / 100) * 360;
         
-        // Start from top (0 degrees = -90 in SVG coordinates)
-        const startAngle = -Math.PI / 2; // -90 degrees
-        const endAngle = startAngle + maleAngleRad;
+        // Function to calculate point on circle
+        function getPointOnCircle(angle) {
+            const radian = (angle - 90) * (Math.PI / 180);
+            return {
+                x: centerX + radius * Math.cos(radian),
+                y: centerY + radius * Math.sin(radian)
+            };
+        }
         
-        // Calculate endpoint for male segment
-        const endX = centerX + radius * Math.cos(endAngle);
-        const endY = centerY + radius * Math.sin(endAngle);
+        // Create male segment
+        if (malePercent > 0) {
+            const startAngle = -90;
+            const endAngle = startAngle + maleAngle;
+            const largeArcFlag = maleAngle > 180 ? 1 : 0;
+            
+            const startPoint = getPointOnCircle(startAngle);
+            const endPoint = getPointOnCircle(endAngle);
+            
+            const pathData = [
+                `M ${centerX} ${centerY}`,
+                `L ${startPoint.x} ${startPoint.y}`,
+                `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${endPoint.x} ${endPoint.y}`,
+                'Z'
+            ].join(' ');
+            
+            const malePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            malePath.setAttribute('d', pathData);
+            malePath.setAttribute('fill', colors.male);
+            malePath.setAttribute('stroke', '#000000');
+            malePath.setAttribute('stroke-width', '2');
+            svgElement.appendChild(malePath);
+        }
         
-        // Large arc flag: 1 if angle > 180, 0 otherwise
-        const largeArcFlag = maleAngle > 180 ? 1 : 0;
-        
-        // Create SVG
-        const svg = `
-            <svg class="pie-chart" viewBox="0 0 200 200">
-                <!-- Male segment (Navy Blue) -->
-                <path d="M ${centerX} ${centerY} L ${centerX} ${centerY - radius} A ${radius} ${radius} 0 ${largeArcFlag} 1 ${endX} ${endY} Z" 
-                      fill="#001f3f" />
-                <!-- Female segment (Black) -->
-                <path d="M ${centerX} ${centerY} L ${endX} ${endY} A ${radius} ${radius} 0 ${1 - largeArcFlag} 1 ${centerX} ${centerY - radius} Z" 
-                      fill="#000000" />
-            </svg>
+        // Create female segment
+        if (femalePercent > 0) {
+            const startAngle = -90 + maleAngle;
+            const endAngle = startAngle + femaleAngle;
+            const largeArcFlag = femaleAngle > 180 ? 1 : 0;
+            
+            const startPoint = getPointOnCircle(startAngle);
+            const endPoint = getPointOnCircle(endAngle);
+            
+            const pathData = [
+                `M ${centerX} ${centerY}`,
+                `L ${startPoint.x} ${startPoint.y}`,
+                `A ${radius} ${radius} 0 ${largeArcFlag} 1 ${endPoint.x} ${endPoint.y}`,
+                'Z'
+            ].join(' ');
+            
+            const femalePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            femalePath.setAttribute('d', pathData);
+            femalePath.setAttribute('fill', colors.female);
+            femalePath.setAttribute('stroke', '#000000');
+            femalePath.setAttribute('stroke-width', '2');
+            svgElement.appendChild(femalePath);
+        }
+    }
+
+    // Function to create legend
+    function createLegend(legendElement, malePercent, femalePercent, colors) {
+        legendElement.innerHTML = `
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: ${colors.male};"></span>
+                <span>Male: ${malePercent.toFixed(1)}%</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: ${colors.female};"></span>
+                <span>Female: ${femalePercent.toFixed(1)}%</span>
+            </div>
         `;
-        
-        return svg;
     }
 
-    // Function to update a chart with new data
-    function updateChart(containerId, malePercent, femalePercent) {
-        const container = document.getElementById(containerId);
-        if (!container) return;
-        
-        const svg = createPieChartSVG(malePercent, femalePercent);
-        const chartDiv = container.querySelector('.pie-chart-container');
-        if (chartDiv) {
-            chartDiv.innerHTML = svg;
-        }
-        
-        // Update legend
-        const legendItems = container.querySelectorAll('.legend-item span:last-child');
-        if (legendItems.length >= 2) {
-            legendItems[0].textContent = `Male: ${malePercent}%`;
-            legendItems[1].textContent = `Female: ${femalePercent}%`;
+    // Load and display statistics
+    async function loadStatistics() {
+        try {
+            // For now, use 50-50 for all statistics as requested
+            const malePercent = 50;
+            const femalePercent = 50;
+            
+            // Colors: navy blue (#001f3f) and white (#FFFFFF) with black borders
+            const colors = {
+                male: '#001f3f',  // Navy Blue
+                female: '#FFFFFF'  // White
+            };
+
+            // Calculate actual ratios from data (for future use when gender data is available)
+            // For now, fetch data but use 50-50
+            try {
+                // Fetch central panel data
+                const centralPanelData = await Promise.all(
+                    centralPanelFiles.map(file => 
+                        fetchJSONFile(`data/central-panel/${file}`)
+                    )
+                );
+                
+                // Fetch councillor data
+                const councillorData = await Promise.all(
+                    councillorFiles.map(file => 
+                        fetchJSONFile(`data/councillors/${file}`).catch(() => null)
+                    )
+                );
+                
+                // Update last updated timestamp
+                if (lastUpdatedSpan && centralPanelData[0]?.lastUpdated) {
+                    const updatedDate = new Date(centralPanelData[0].lastUpdated);
+                    lastUpdatedSpan.textContent = updatedDate.toLocaleString();
+                }
+            } catch (error) {
+                console.warn('Could not fetch data for statistics:', error);
+            }
+
+            // Create charts with 50-50 ratio
+            createPieChart(centralPanelChart, malePercent, femalePercent, colors);
+            createLegend(centralPanelLegend, malePercent, femalePercent, colors);
+            
+            createPieChart(councillorChart, malePercent, femalePercent, colors);
+            createLegend(councillorLegend, malePercent, femalePercent, colors);
+            
+            createPieChart(votersChart, malePercent, femalePercent, colors);
+            createLegend(votersLegend, malePercent, femalePercent, colors);
+
+        } catch (error) {
+            console.error("Could not load statistics:", error);
+            if (centralPanelChart) {
+                centralPanelChart.innerHTML = '<text x="100" y="100" text-anchor="middle" fill="#000000">Error loading data</text>';
+            }
         }
     }
 
-    // Initialize all charts with 50-50 split
-    updateChart('central-panel-chart', stats.centralPanel.male, stats.centralPanel.female);
-    updateChart('councillor-chart', stats.councillor.male, stats.councillor.female);
-    updateChart('voters-chart', stats.voters.male, stats.voters.female);
-
-    // Future: Function to calculate statistics from actual candidate data
-    // This can be implemented later when gender data is available
-    async function calculateStatisticsFromData() {
-        // This would fetch candidate data and calculate actual gender ratios
-        // For now, keeping the 50-50 placeholder
+    // Load statistics when page loads
+    if (centralPanelChart && councillorChart && votersChart) {
+        loadStatistics();
         
-        /*
-        Example implementation:
-        const centralPanelFiles = [...];
-        const councillorFiles = [...];
-        
-        // Fetch and process data
-        // Count male/female candidates
-        // Update stats object
-        // Call updateChart for each
-        */
+        // Refresh every 60 seconds
+        setInterval(loadStatistics, 60000);
     }
 });
 

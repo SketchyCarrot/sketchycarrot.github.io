@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics - Election Results</title>
+    <title>Statistics - Election Headquarters</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,55 +33,40 @@
     <main class="main-content">
         <div class="content-container">
             <h2>Gender Statistics</h2>
-            <p>Gender ratio breakdown for candidates and voters.</p>
+            <p>Last updated: <span id="last-updated">...</span></p>
             
             <div class="statistics-container">
-                <!-- Central Panel Candidates -->
-                <div class="stat-card" id="central-panel-chart">
+                <!-- Central Panel Candidates Statistics -->
+                <div class="stat-card">
                     <h3>Central Panel Candidates</h3>
-                    <div class="pie-chart-container"></div>
-                    <div class="chart-legend">
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #001f3f;"></span>
-                            <span>Male: 50%</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #000000;"></span>
-                            <span>Female: 50%</span>
-                        </div>
+                    <div class="pie-chart-container">
+                        <svg class="pie-chart" id="central-panel-chart" viewBox="0 0 200 200">
+                            <!-- Pie chart will be generated here -->
+                        </svg>
                     </div>
+                    <div class="chart-legend" id="central-panel-legend"></div>
                 </div>
 
-                <!-- Councillor Candidates -->
-                <div class="stat-card" id="councillor-chart">
+                <!-- Councillor Candidates Statistics -->
+                <div class="stat-card">
                     <h3>Councillor Candidates</h3>
-                    <div class="pie-chart-container"></div>
-                    <div class="chart-legend">
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #001f3f;"></span>
-                            <span>Male: 50%</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #000000;"></span>
-                            <span>Female: 50%</span>
-                        </div>
+                    <div class="pie-chart-container">
+                        <svg class="pie-chart" id="councillor-chart" viewBox="0 0 200 200">
+                            <!-- Pie chart will be generated here -->
+                        </svg>
                     </div>
+                    <div class="chart-legend" id="councillor-legend"></div>
                 </div>
 
-                <!-- Voters -->
-                <div class="stat-card" id="voters-chart">
+                <!-- Voters Statistics -->
+                <div class="stat-card">
                     <h3>Voters</h3>
-                    <div class="pie-chart-container"></div>
-                    <div class="chart-legend">
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #001f3f;"></span>
-                            <span>Male: 50%</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #000000;"></span>
-                            <span>Female: 50%</span>
-                        </div>
+                    <div class="pie-chart-container">
+                        <svg class="pie-chart" id="voters-chart" viewBox="0 0 200 200">
+                            <!-- Pie chart will be generated here -->
+                        </svg>
                     </div>
+                    <div class="chart-legend" id="voters-legend"></div>
                 </div>
             </div>
         </div>
@@ -91,8 +76,8 @@
         <p>&copy; 2025 Election Committee. All rights reserved.</p>
     </footer>
 
-    <script src="js/main.js"></script>
     <script src="js/statistics.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
 

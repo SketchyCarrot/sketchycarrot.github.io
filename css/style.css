@@ -204,7 +204,7 @@ a {
     font-weight: bold;
 }
 
-/* --- Statistics Page --- */
+/* --- Statistics Page Styling --- */
 .statistics-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -213,18 +213,18 @@ a {
 }
 
 .stat-card {
-    background-color: #ffffff;
-    border: 2px solid var(--border-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .stat-card h3 {
     margin-bottom: 1.5rem;
     color: var(--primary-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .pie-chart-container {
@@ -232,6 +232,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 1.5rem 0;
+    padding: 1rem;
 }
 
 .pie-chart {
@@ -242,24 +243,27 @@ a {
 
 .chart-legend {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 0.75rem;
     margin-top: 1rem;
-    flex-wrap: wrap;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .legend-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 0.75rem;
     font-size: 0.95rem;
+    color: var(--text-color);
 }
 
 .legend-color {
     width: 20px;
     height: 20px;
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
+    border: 2px solid var(--text-color);
+    border-radius: 4px;
     display: inline-block;
 }
 
@@ -402,14 +406,17 @@ a {
         padding: 1rem;
     }
     
-    .pie-chart {
-        width: 150px;
-        height: 150px;
+    .stat-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
     
-    .chart-legend {
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
+    .pie-chart {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .legend-item {
+        font-size: 0.9rem;
     }
 }
