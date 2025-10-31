@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Election Headquarters - Home</title>
+    <title>Home - JNUSU Election Committee 2025-26</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home-page">
 
     <header class="site-header">
         <div class="header-container">
             <div class="logo-container">
                 <img src="img/logo.jpg" alt="Election Logo" class="logo">
-                <h1>Election Headquarters</h1>
+                <h1>JNUSU Election Committee 2025-26</h1>
             </div>
             <button class="hamburger" id="hamburger-menu" aria-label="Toggle Menu">
                 <span></span>
@@ -22,6 +22,7 @@
             <nav class="nav-menu" id="nav-menu">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="notices.html">Notices</a></li>
                     <li><a href="results-central.html">Live Results (Central Panel)</a></li>
                     <li><a href="results-councillor.html">Live Results (Councillor)</a></li>
                     <li><a href="statistics.html">Statistics</a></li>
@@ -32,14 +33,21 @@
 
     <main class="main-content">
         <div class="content-container">
+            <div class="home-notices-section">
+                <h2 class="section-title">Latest Notices</h2>
+                <div class="notices-container" id="home-notices-container">
+                    <p>Loading notices...</p>
+                </div>
+            </div>
             <div class="home-hero">
-                <img src="img/logo.jpg" alt="JNUSU Election Committee Logo" class="home-logo">
-                <p class="chair-text">Chair of Election Committee - Ravikant</p>
+                <img src="img/chair.jpg" alt="Chairperson" class="home-logo">
+                <p class="chair-text">Chair of Election Committee - Ravi Kant</p>
             </div>
         </div>
     </main>
 
 
+    <script src="js/notices.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
