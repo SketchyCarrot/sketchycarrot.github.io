@@ -1,0 +1,47 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "SBT",
+  "candidates": [
+    {
+      "id": "sbt1",
+      "name": "AASTHA SINGH",
+      "votes": 0
+    },
+    {
+      "id": "sbt2",
+      "name": "ABHIMANYU SHARMA",
+      "votes": 0
+    },
+    {
+      "id": "sbt3",
+      "name": "AKASH SINGH",
+      "votes": 0
+    },
+    {
+      "id": "sbt4",
+      "name": "BHOMA RAM",
+      "votes": 0
+    },
+    {
+      "id": "sbt5",
+      "name": "GOPAL KUMAR ROY",
+      "votes": 0
+    },
+    {
+      "id": "sbt6",
+      "name": "RUBI SHEORAN",
+      "votes": 0
+    },
+    {
+      "id": "sbt7",
+      "name": "SHYAM JYOTI",
+      "votes": 0
+    },
+    {
+      "id": "sbt8",
+      "name": "SUBHOJIT GHOSH",
+      "votes": 0
+    }
+  ]
+}
+

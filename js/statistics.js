@@ -23,9 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
         'sps.json',
         'sss.json',
         'scns.json',
-        'chosching-lazes.json',
         'scmm.json',
-        'sll-cs.json'
+        'sll-cs.json',
+        'absvme.json',
+        'amalgamate.json',
+        'cslg.json',
+        'part-time.json',
+        'saa.json',
+        'sbt.json',
+        'scis.json',
+        'scss.json',
+        'ses.json',
+        'sis.json'
     ];
 
     // Helper function to fetch a JSON file

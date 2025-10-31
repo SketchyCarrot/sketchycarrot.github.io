@@ -4,29 +4,33 @@
   "candidates": [
     {
       "id": "scns1",
-      "name": "ISTKHAR KHAN",
+      "name": "CHOSCHING LAZES",
       "votes": 0
     },
     {
       "id": "scns2",
-      "name": "ROOPAL PAL",
+      "name": "ISTKHAR KHAN",
       "votes": 0
     },
     {
       "id": "scns3",
-      "name": "LAKSHY GUPTA",
+      "name": "MD AMAN",
       "votes": 0
     },
     {
       "id": "scns4",
-      "name": "SANGEETA MISTRI",
+      "name": "MD MUSHARRAF",
       "votes": 0
     },
     {
       "id": "scns5",
-      "name": "ADARSH SINGH",
+      "name": "MOHD ASLAM",
+      "votes": 0
+    },
+    {
+      "id": "scns6",
+      "name": "ROOPAL PAL",
       "votes": 0
     }
   ]
 }
-

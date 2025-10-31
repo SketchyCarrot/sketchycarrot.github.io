@@ -1,0 +1,27 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "SAA",
+  "candidates": [
+    {
+      "id": "saa1",
+      "name": "AADITYA PRATAP SINGH RANA",
+      "votes": 0
+    },
+    {
+      "id": "saa2",
+      "name": "ADITYA SINGH",
+      "votes": 0
+    },
+    {
+      "id": "saa3",
+      "name": "DEEVYA DEO",
+      "votes": 0
+    },
+    {
+      "id": "saa4",
+      "name": "ULFAT RANA",
+      "votes": 0
+    }
+  ]
+}
+

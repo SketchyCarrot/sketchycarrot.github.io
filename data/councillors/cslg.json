@@ -1,0 +1,47 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "CSLG",
+  "candidates": [
+    {
+      "id": "cslg1",
+      "name": "ANJALI",
+      "votes": 0
+    },
+    {
+      "id": "cslg2",
+      "name": "AXIT YADAV",
+      "votes": 0
+    },
+    {
+      "id": "cslg3",
+      "name": "BABLU KUMAR",
+      "votes": 0
+    },
+    {
+      "id": "cslg4",
+      "name": "KAPIL KUMAR VERMA",
+      "votes": 0
+    },
+    {
+      "id": "cslg5",
+      "name": "KRASHN KUMAR TRIPATHI",
+      "votes": 0
+    },
+    {
+      "id": "cslg6",
+      "name": "NITHIN KUMAR B T",
+      "votes": 0
+    },
+    {
+      "id": "cslg7",
+      "name": "RAHUL BANSOD",
+      "votes": 0
+    },
+    {
+      "id": "cslg8",
+      "name": "SHIVAM",
+      "votes": 0
+    }
+  ]
+}
+

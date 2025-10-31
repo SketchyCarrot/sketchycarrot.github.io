@@ -1,0 +1,57 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "SCIS",
+  "candidates": [
+    {
+      "id": "scis1",
+      "name": "ANAND PRAKASH RAW",
+      "votes": 0
+    },
+    {
+      "id": "scis2",
+      "name": "ARVIND",
+      "votes": 0
+    },
+    {
+      "id": "scis3",
+      "name": "HARSH SHIVHARE",
+      "votes": 0
+    },
+    {
+      "id": "scis4",
+      "name": "KARAN",
+      "votes": 0
+    },
+    {
+      "id": "scis5",
+      "name": "KOMAL DEVI",
+      "votes": 0
+    },
+    {
+      "id": "scis6",
+      "name": "NANDANI KUMARI",
+      "votes": 0
+    },
+    {
+      "id": "scis7",
+      "name": "PAKIZ KHAN",
+      "votes": 0
+    },
+    {
+      "id": "scis8",
+      "name": "SONU KUMAR",
+      "votes": 0
+    },
+    {
+      "id": "scis9",
+      "name": "SYED SHAH FARAAZ HASAN",
+      "votes": 0
+    },
+    {
+      "id": "scis10",
+      "name": "VAANI PRAGYA",
+      "votes": 0
+    }
+  ]
+}
+

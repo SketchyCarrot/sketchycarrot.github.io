@@ -14,15 +14,30 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--secondary-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1 {
     margin-bottom: 1rem;
     color: var(--primary-color);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -64,16 +79,40 @@ a {
     align-items: center;
 }
 
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo-link:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 .logo {
     width: 50px;
     height: 50px;
-    margin-right: 1rem;
+    display: block;
 }
 
 .site-header h1 {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 0;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.site-header h1 strong {
+    font-weight: 700;
+    display: block;
 }
 
 .nav-menu ul {
@@ -147,10 +186,11 @@ a {
 
 .chair-text {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--primary-color);
     margin: 0;
     padding-top: 0.5rem;
+    font-family: "Libre Baskerville", serif;
 }
 
 /* --- Notices Section --- */
@@ -164,6 +204,8 @@ a {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
 }
 
 .home-page .section-title {
@@ -466,7 +508,8 @@ a {
     }
 
     .site-header h1 {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+        line-height: 1.3;
     }
     
     /* Mobile table styling */
