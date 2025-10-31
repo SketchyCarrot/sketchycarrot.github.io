@@ -169,11 +169,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
         } catch (error) {
             console.error("Could not load election results:", error);
+            
+            // Check if error is due to CORS (file:// protocol)
+            const isCorsError = error.message.includes('fetch') || error.message.includes('Failed to fetch') || 
+                               error.message.includes('CORS') || window.location.protocol === 'file:';
+            
             const errorMessage = `
                 <div style="padding: 2rem; text-align: center; color: #d32f2f;">
                     <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">Unable to load results</p>
-                    <p>Please check your internet connection and try again later.</p>
-                    <p style="font-size: 0.9rem; margin-top: 1rem; color: #666;">Error: ${error.message}</p>
+                    ${isCorsError ? `
+                        <p style="font-weight: bold; margin-bottom: 1rem;">⚠️ This website must be run through a local server!</p>
+                        <p style="margin-bottom: 0.5rem;">Please use one of these methods:</p>
+                        <ol style="text-align: left; display: inline-block; margin: 1rem 0;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Python:</strong> Run <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">python -m http.server 8000</code> in this folder, then visit <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">http://localhost:8000</code></li>
+                            <li style="margin-bottom: 0.5rem;"><strong>VS Code:</strong> Install "Live Server" extension and right-click index.html → "Open with Live Server"</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Node.js:</strong> Run <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px;">npx http-server -p 8000</code></li>
+                        </ol>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Opening HTML files directly (file://) won't work due to browser security restrictions.</p>
+                    ` : `
+                        <p>Please check your internet connection and try again later.</p>
+                        <p style="font-size: 0.9rem; margin-top: 1rem; color: #666;">Error: ${error.message}</p>
+                    `}
                 </div>
             `;
             if (centralContainer) centralContainer.innerHTML = errorMessage;
