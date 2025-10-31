@@ -36,37 +36,14 @@ a {
 
 /* --- Header & Navigation --- */
 .site-header {
-    background-color: var(--primary-color);
-    color: var(--header-text);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 1rem;
-    border-bottom: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 
 /* --- Home Page Specific Styles --- */
 .home-page {
-    background-color: var(--primary-color);
-}
-
-.home-page .site-header {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-.home-page .site-header h1 {
-    color: var(--primary-color);
-}
-
-.home-page .nav-menu a {
-    color: var(--primary-color);
-}
-
-.home-page .nav-menu a:hover,
-.home-page .nav-menu a.active {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-.home-page .hamburger span {
     background-color: var(--primary-color);
 }
 
@@ -94,7 +71,7 @@ a {
 }
 
 .site-header h1 {
-    color: var(--header-text);
+    color: var(--primary-color);
     font-size: 1.5rem;
     margin: 0;
 }
@@ -109,7 +86,7 @@ a {
 }
 
 .nav-menu a {
-    color: var(--header-text);
+    color: var(--primary-color);
     font-weight: bold;
     padding: 0.5rem;
     border-radius: 4px;
@@ -117,8 +94,8 @@ a {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* --- Hamburger Menu (Mobile) --- */
@@ -138,7 +115,7 @@ a {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: var(--header-text);
+    background-color: var(--primary-color);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -438,12 +415,9 @@ a {
         top: 83px; /* Height of header */
         left: 0;
         width: 100%;
-        background-color: var(--primary-color);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    
-    .home-page .nav-menu {
         background-color: var(--secondary-color);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        border-bottom: 3px solid var(--primary-color);
     }
     
     .nav-menu.active {
@@ -457,10 +431,6 @@ a {
     .nav-menu li {
         margin: 0;
         text-align: center;
-        border-bottom: 1px solid #003366; /* Darker navy border */
-    }
-    
-    .home-page .nav-menu li {
         border-bottom: 1px solid var(--border-color);
     }
     
@@ -471,12 +441,13 @@ a {
     .nav-menu a {
         display: block;
         padding: 1rem;
+        color: var(--primary-color);
     }
     
     .nav-menu a:hover,
     .nav-menu a.active {
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
     }
     
     .hamburger {
