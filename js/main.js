@@ -28,23 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Councillor file names
     const councillorFiles = [
-        'sls.json',
-        'soe.json',
-        'sps.json',
-        'sss.json',
         'scns.json',
-        'scmm.json',
-        'sll-cs.json',
         'absvme.json',
         'amalgamate.json',
         'cslg.json',
-        'part-time.json',
         'saa.json',
         'sbt.json',
         'scis.json',
+        'ssis.json',
         'scss.json',
         'ses.json',
-        'sis.json'
+        'sis.json',
+        'sll-cs.json',
+        'soe.json',
+        'sps.json',
+        'sss.json'
     ];
 
     // Helper function to fetch a JSON file

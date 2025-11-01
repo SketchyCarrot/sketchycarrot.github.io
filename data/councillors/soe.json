@@ -1,75 +1,45 @@
 {
   "lastUpdated": "2025-10-29T19:00:00Z",
-  "school": "School of Environmental Sciences (SOE)",
+  "school": "SOE",
   "candidates": [
     {
       "id": "soe1",
-      "name": "BHADU TAVISH",
-      "votes": 0
-    },
-    {
-      "id": "soe2",
       "name": "DAKSH NANDAL",
       "votes": 0
     },
     {
-      "id": "soe3",
+      "id": "soe2",
       "name": "MOHAMMAD SHAVEZ",
       "votes": 0
     },
     {
-      "id": "soe4",
-      "name": "RAJ THAKUR",
-      "votes": 0
-    },
-    {
-      "id": "soe5",
+      "id": "soe3",
       "name": "RAMJI",
       "votes": 0
     },
     {
-      "id": "soe6",
+      "id": "soe4",
       "name": "RISHANT MAURYA",
       "votes": 0
     },
     {
-      "id": "soe7",
-      "name": "RISHIK ASHILI",
+      "id": "soe5",
+      "name": "RISHNA ASHLI",
       "votes": 0
     },
     {
-      "id": "soe8",
+      "id": "soe6",
       "name": "RISHIKESH HEDAOO",
       "votes": 0
     },
     {
-      "id": "soe9",
-      "name": "SHARVARI RAJENDRA PATIL",
-      "votes": 0
-    },
-    {
-      "id": "soe10",
+      "id": "soe7",
       "name": "SHIVANS KUMAR SINHA",
       "votes": 0
     },
     {
-      "id": "soe11",
-      "name": "SUNIDHI CHOPRA",
-      "votes": 0
-    },
-    {
-      "id": "soe12",
-      "name": "SURAJ KUMAR",
-      "votes": 0
-    },
-    {
-      "id": "soe13",
-      "name": "UMESH YADAV",
-      "votes": 0
-    },
-    {
-      "id": "soe14",
-      "name": "UTSA KAR",
+      "id": "soe8",
+      "name": "TAVISH BHADU",
       "votes": 0
     }
   ]

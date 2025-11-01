@@ -4,36 +4,16 @@
   "candidates": [
     {
       "id": "ses1",
-      "name": "GULAM WARIS",
-      "votes": 0
-    },
-    {
-      "id": "ses2",
-      "name": "HARDIK SINGH",
-      "votes": 0
-    },
-    {
-      "id": "ses3",
-      "name": "KAIF KHAN",
-      "votes": 0
-    },
-    {
-      "id": "ses4",
-      "name": "KASHISH RAJ",
-      "votes": 0
-    },
-    {
-      "id": "ses5",
       "name": "RAJESH BAG",
       "votes": 0
     },
     {
-      "id": "ses6",
+      "id": "ses2",
       "name": "SANJEEV KUMAR",
       "votes": 0
     },
     {
-      "id": "ses7",
+      "id": "ses3",
       "name": "SHIVAM RAJORIYA",
       "votes": 0
     }

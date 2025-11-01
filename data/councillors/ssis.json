@@ -1,0 +1,27 @@
+{
+  "lastUpdated": "2025-10-29T19:00:00Z",
+  "school": "SSIS",
+  "candidates": [
+    {
+      "id": "ssis1",
+      "name": "ANSH SRIVASTAVA",
+      "votes": 0
+    },
+    {
+      "id": "ssis2",
+      "name": "DEEPALI JALANDRE",
+      "votes": 0
+    },
+    {
+      "id": "ssis3",
+      "name": "RAVIRANJAN SHARMA",
+      "votes": 0
+    },
+    {
+      "id": "ssis4",
+      "name": "SANJAY YADAV",
+      "votes": 0
+    }
+  ]
+}
+
