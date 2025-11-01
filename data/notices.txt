@@ -1,1 +1,5 @@
-2025-10-31T08:29:49Z|GBM Update|GBM of SBT, Amalgamate and SSIS completed.
+2025-11-01T09:00:00Z|Presidential Debate|The Presidential Debate is scheduled for Sunday, 02/11/25, from 08:00 pm onwards.
+2025-11-01T09:00:00Z|No Campaign Day|Monday, 03/11/25, is No Campaign Day.
+2025-11-01T09:00:00Z|Polling Schedule|Polling will be held on Tuesday, 04/11/25, from 09:00 am - 01:00 pm and 02:30 pm - 05:30 pm.
+2025-11-01T09:00:00Z|Counting of Votes|Counting of votes will begin on Tuesday, 04/11/25, from 09:00 pm onwards.
+2025-11-01T09:00:00Z|Declaration of Final Results|Declaration of final results will be on Thursday, 06/11/25.
