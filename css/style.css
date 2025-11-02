@@ -313,6 +313,9 @@ a {
     text-decoration: none;
     transition: all 0.2s ease;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    touch-action: manipulation; /* Improve touch responsiveness */
+    user-select: none; /* Prevent text selection on tap */
 }
 
 .pdf-view-btn {
@@ -321,7 +324,8 @@ a {
     border: 2px solid var(--primary-color);
 }
 
-.pdf-view-btn:hover {
+.pdf-view-btn:hover,
+.pdf-view-btn:active {
     background-color: #003366;
     border-color: #003366;
     transform: translateY(-1px);
@@ -334,11 +338,17 @@ a {
     border: 2px solid var(--primary-color);
 }
 
-.pdf-download-btn:hover {
+.pdf-download-btn:hover,
+.pdf-download-btn:active {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transform: translateY(-1px);
     box-shadow: 0 2px 6px rgba(0,31,63,0.3);
+}
+
+/* Active state for mobile tap feedback */
+.pdf-btn:active {
+    transform: scale(0.98);
 }
 
 .pdf-btn svg {
@@ -822,12 +832,38 @@ a {
     .notice-pdf-actions {
         flex-direction: column;
         gap: 0.75rem;
+        width: 100%;
     }
     
     .pdf-btn {
         justify-content: center;
         font-size: 0.9rem;
-        padding: 0.5rem 1rem;
+        padding: 0.6rem 1rem;
+        width: 100%;
+        min-height: 44px; /* Touch-friendly minimum size */
+        text-align: center;
+    }
+    
+    .pdf-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Ensure latest notice badge doesn't overlap with content on mobile */
+    .notice-link-home.latest-notice {
+        margin-top: 8px;
+    }
+    
+    /* Disable animations on mobile for better performance */
+    @media (prefers-reduced-motion: reduce) {
+        .notice-link-home.latest-notice,
+        .notice-link-home.latest-notice::before,
+        .notice-link-home.latest-notice::after {
+            animation: none;
+        }
+        .notice-link-home.latest-notice {
+            border: 2px solid #b8860b;
+        }
     }
     
     /* Mobile statistics styling */
@@ -852,5 +888,57 @@ a {
     
     .legend-item {
         font-size: 0.9rem;
+    }
+}
+
+/* --- Extra Small Mobile Screens (< 480px) --- */
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 0.8rem;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .notice-card {
+        padding: 0.75rem;
+    }
+    
+    .notice-title {
+        font-size: 1rem;
+    }
+    
+    .notice-date {
+        font-size: 0.8rem;
+    }
+    
+    .notice-content {
+        font-size: 0.9rem;
+    }
+    
+    .pdf-btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .pdf-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .notice-link-home {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.7rem;
+    }
+    
+    .notice-link-home.latest-notice::after {
+        font-size: 0.55rem;
+        padding: 1px 4px;
     }
 }
