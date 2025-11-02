@@ -38,14 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
             if (parts.length >= 3) {
                 const date = parts[0].trim();
                 const title = parts[1].trim();
-                const content = parts.slice(2).join('|').trim(); // In case content has | characters
+                const content = parts[2].trim();
+                const pdf = parts.length >= 4 ? parts[3].trim() : null;
                 
-                notices.push({
+                const notice = {
                     id: `notice${index + 1}`,
                     title: title,
                     content: content,
                     date: date
-                });
+                };
+                
+                if (pdf) {
+                    notice.pdf = pdf;
+                }
+                
+                notices.push(notice);
             }
         });
         
@@ -75,6 +82,31 @@ document.addEventListener("DOMContentLoaded", () => {
     function createNoticeCard(notice) {
         const card = document.createElement('div');
         card.className = 'notice-card';
+        
+        let pdfButtons = '';
+        if (notice.pdf) {
+            const pdfPath = `data/pdfs/${notice.pdf}`;
+            pdfButtons = `
+                <div class="notice-pdf-actions">
+                    <a href="${pdfPath}" target="_blank" class="pdf-btn pdf-view-btn" title="View PDF">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        View PDF
+                    </a>
+                    <a href="${pdfPath}" download="${notice.pdf}" class="pdf-btn pdf-download-btn" title="Download PDF">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download PDF
+                    </a>
+                </div>
+            `;
+        }
+        
         card.innerHTML = `
             <div class="notice-header">
                 <h3 class="notice-title">${notice.title}</h3>
@@ -83,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="notice-content">
                 <p>${notice.content}</p>
             </div>
+            ${pdfButtons}
         `;
         return card;
     }
@@ -125,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // Display notices
-            noticesToDisplay.forEach(notice => {
+            noticesToDisplay.forEach((notice, index) => {
                 if (noticesContainer) {
                     // Full notice card for notices page
                     const card = createNoticeCard(notice);
@@ -134,6 +167,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (homeNoticesContainer) {
                     // Compact link for home page
                     const link = createCompactNoticeLink(notice);
+                    // Add special class to the latest notice (first one)
+                    if (index === 0) {
+                        link.classList.add('latest-notice');
+                    }
                     homeNoticesContainer.appendChild(link);
                 }
             });

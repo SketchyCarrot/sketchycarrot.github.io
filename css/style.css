@@ -293,6 +293,58 @@ a {
     margin: 0;
 }
 
+/* --- PDF Actions Buttons --- */
+.notice-pdf-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.pdf-view-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.pdf-view-btn:hover {
+    background-color: #003366;
+    border-color: #003366;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,31,63,0.3);
+}
+
+.pdf-download-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.pdf-download-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,31,63,0.3);
+}
+
+.pdf-btn svg {
+    flex-shrink: 0;
+}
+
 .no-notices {
     text-align: center;
     padding: 2rem;
@@ -331,6 +383,92 @@ a {
 .notice-link-home:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+/* --- Shiny Blinking Border for Latest Notice --- */
+.notice-link-home.latest-notice {
+    position: relative;
+    background: linear-gradient(135deg, rgba(220,220,220,0.15), rgba(255,255,255,0.1));
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #b8860b, #daa520, #b8860b) 1;
+    animation: shimmer 2s infinite, borderPulse 1.5s ease-in-out infinite;
+    font-weight: 600;
+    box-shadow: 0 0 8px rgba(184, 134, 11, 0.3), 0 0 15px rgba(184, 134, 11, 0.2);
+}
+
+.notice-link-home.latest-notice::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #b8860b, #daa520, #c0c0c0, #daa520, #b8860b);
+    background-size: 400% 400%;
+    border-radius: 4px;
+    z-index: -1;
+    animation: gradientShift 3s ease infinite;
+    opacity: 0.5;
+}
+
+.notice-link-home.latest-notice::after {
+    content: 'NEW';
+    position: absolute;
+    top: -12px;
+    right: -8px;
+    background: linear-gradient(135deg, #b8860b, #daa520);
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: badgePulse 1.5s ease-in-out infinite;
+}
+
+.notice-link-home.latest-notice:hover {
+    background: linear-gradient(135deg, rgba(220,220,220,0.25), rgba(255,255,255,0.15));
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(184, 134, 11, 0.4), 0 0 20px rgba(184, 134, 11, 0.25);
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        box-shadow: 0 0 8px rgba(184, 134, 11, 0.3), 0 0 15px rgba(184, 134, 11, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(184, 134, 11, 0.5), 0 0 20px rgba(184, 134, 11, 0.3), 0 0 25px rgba(184, 134, 11, 0.2);
+    }
+}
+
+@keyframes borderPulse {
+    0%, 100% {
+        border-color: #b8860b;
+    }
+    50% {
+        border-color: #daa520;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes badgePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .home-page .no-notices {
@@ -653,6 +791,14 @@ a {
         text-align: center;
     }
     
+    /* Mobile adjustments for latest notice effect */
+    .notice-link-home.latest-notice::after {
+        top: -10px;
+        right: -6px;
+        font-size: 0.6rem;
+        padding: 2px 5px;
+    }
+    
     .notice-card {
         padding: 1rem;
     }
@@ -670,6 +816,18 @@ a {
     
     .notice-date {
         font-size: 0.85rem;
+    }
+    
+    /* Mobile PDF buttons styling */
+    .notice-pdf-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .pdf-btn {
+        justify-content: center;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
     }
     
     /* Mobile statistics styling */

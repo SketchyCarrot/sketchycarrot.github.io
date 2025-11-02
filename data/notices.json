@@ -2,33 +2,24 @@
   "notices": [
     {
       "id": "notice1",
-      "title": "Election Schedule Released",
-      "content": "The detailed election schedule for all positions has been released. Please check the official notice board for more details.",
-      "date": "2025-01-15T10:00:00Z"
+      "title": "Presidential Debate Rescheduled",
+      "content": "The Presidential debate scheduled for 8PM on 2/11/25 has been rescheduled to 11:30pm on 2/11/25 due to unforeseen circumstances.",
+      "date": "2025-11-02T13:00:00Z",
+      "pdf": "presidential-debate-rescheduled.pdf"
     },
     {
       "id": "notice2",
-      "title": "Voting Process Guidelines",
-      "content": "All students are requested to follow the voting guidelines. Ensure you bring valid ID proof and follow the instructions at polling stations.",
-      "date": "2025-01-14T14:30:00Z"
+      "title": "Final Voter List",
+      "content": "Please find the PDF of the final voter list.",
+      "date": "2025-11-01T12:00:00Z",
+      "pdf": "final-voter-list.pdf"
     },
     {
       "id": "notice3",
-      "title": "Results Declaration",
-      "content": "The election results will be declared live on this website. Stay tuned for real-time updates as votes are counted.",
-      "date": "2025-01-13T09:00:00Z"
-    },
-    {
-      "id": "notice4",
-      "title": "Nomination Deadline Extended",
-      "content": "The deadline for submitting nominations has been extended until further notice. Candidates are requested to submit their forms at the earliest.",
-      "date": "2025-01-12T16:00:00Z"
-    },
-    {
-      "id": "notice5",
-      "title": "Election Committee Meeting",
-      "content": "An important meeting of the Election Committee will be held tomorrow. All members are required to attend.",
-      "date": "2025-01-11T11:00:00Z"
+      "title": "Final List of Candidates",
+      "content": "Please find the PDF for the final list of candidates.",
+      "date": "2025-11-01T10:00:00Z",
+      "pdf": "final-candidates-list.pdf"
     }
   ]
 }
