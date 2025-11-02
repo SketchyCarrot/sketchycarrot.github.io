@@ -2,10 +2,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const centralPanelChart = document.getElementById('central-panel-chart');
     const councillorChart = document.getElementById('councillor-chart');
-    const votersChart = document.getElementById('voters-chart');
     const centralPanelLegend = document.getElementById('central-panel-legend');
     const councillorLegend = document.getElementById('councillor-legend');
-    const votersLegend = document.getElementById('voters-legend');
     const lastUpdatedSpan = document.getElementById('last-updated');
 
     // Central panel file names
@@ -132,9 +130,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load and display statistics
     async function loadStatistics() {
         try {
-            // For now, use 50-50 for all statistics as requested
-            const malePercent = 50;
-            const femalePercent = 50;
+            // Gender representation percentages
+            const centralPanelMalePercent = 70;
+            const centralPanelFemalePercent = 30;
+            
+            const councillorMalePercent = 75;
+            const councillorFemalePercent = 25;
             
             // Colors: navy blue (#001f3f) and white (#FFFFFF) with black borders
             const colors = {
@@ -142,8 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 female: '#FFFFFF'  // White
             };
 
-            // Calculate actual ratios from data (for future use when gender data is available)
-            // For now, fetch data but use 50-50
+            // Fetch data for last updated timestamp
             try {
                 // Fetch central panel data
                 const centralPanelData = await Promise.all(
@@ -168,15 +168,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.warn('Could not fetch data for statistics:', error);
             }
 
-            // Create charts with 50-50 ratio
-            createPieChart(centralPanelChart, malePercent, femalePercent, colors);
-            createLegend(centralPanelLegend, malePercent, femalePercent, colors);
+            // Create charts with specific percentages
+            createPieChart(centralPanelChart, centralPanelMalePercent, centralPanelFemalePercent, colors);
+            createLegend(centralPanelLegend, centralPanelMalePercent, centralPanelFemalePercent, colors);
             
-            createPieChart(councillorChart, malePercent, femalePercent, colors);
-            createLegend(councillorLegend, malePercent, femalePercent, colors);
-            
-            createPieChart(votersChart, malePercent, femalePercent, colors);
-            createLegend(votersLegend, malePercent, femalePercent, colors);
+            createPieChart(councillorChart, councillorMalePercent, councillorFemalePercent, colors);
+            createLegend(councillorLegend, councillorMalePercent, councillorFemalePercent, colors);
 
         } catch (error) {
             console.error("Could not load statistics:", error);
@@ -187,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Load statistics when page loads
-    if (centralPanelChart && councillorChart && votersChart) {
+    if (centralPanelChart && councillorChart) {
         loadStatistics();
         
         // Refresh every 60 seconds
