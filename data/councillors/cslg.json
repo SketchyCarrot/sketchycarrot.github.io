@@ -1,15 +1,30 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "CSLG",
   "candidates": [
     {
       "id": "cslg1",
       "name": "KAPIL KUMAR VERMA",
-      "votes": 0
+      "votes": 35
     },
     {
       "id": "cslg2",
       "name": "RAHUL BANSOD",
+      "votes": 19
+    },
+    {
+      "id": "cslg_nota",
+      "name": "NOTA",
+      "votes": 2
+    },
+    {
+      "id": "cslg_blank",
+      "name": "BLANK",
+      "votes": 0
+    },
+    {
+      "id": "cslg_invalid",
+      "name": "INVALID",
       "votes": 0
     }
   ]

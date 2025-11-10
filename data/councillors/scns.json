@@ -1,15 +1,30 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SCNS",
   "candidates": [
     {
       "id": "scns1",
       "name": "ISTKHAR KHAN",
-      "votes": 0
+      "votes": 27
     },
     {
       "id": "scns2",
       "name": "ROOPAL PAL",
+      "votes": 18
+    },
+    {
+      "id": "scns_nota",
+      "name": "NOTA",
+      "votes": 0
+    },
+    {
+      "id": "scns_blank",
+      "name": "BLANK",
+      "votes": 0
+    },
+    {
+      "id": "scns_invalid",
+      "name": "INVALID",
       "votes": 0
     }
   ]

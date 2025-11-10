@@ -1,21 +1,36 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SES",
   "candidates": [
     {
       "id": "ses1",
       "name": "RAJESH BAG",
-      "votes": 0
+      "votes": 49
     },
     {
       "id": "ses2",
       "name": "SANJEEV KUMAR",
-      "votes": 0
+      "votes": 96
     },
     {
       "id": "ses3",
       "name": "SHIVAM RAJORIYA",
+      "votes": 68
+    },
+    {
+      "id": "ses_nota",
+      "name": "NOTA",
+      "votes": 2
+    },
+    {
+      "id": "ses_blank",
+      "name": "BLANK",
       "votes": 0
+    },
+    {
+      "id": "ses_invalid",
+      "name": "INVALID",
+      "votes": 1
     }
   ]
 }

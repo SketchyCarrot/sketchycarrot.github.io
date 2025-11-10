@@ -2,20 +2,27 @@
   "notices": [
     {
       "id": "notice1",
+      "title": "Final Elected Candidates",
+      "content": "Please find the PDF of the final elected candidates for JNUSU 2025-26.",
+      "date": "2025-11-10T14:00:00Z",
+      "pdf": "final-elected-candidates.pdf"
+    },
+    {
+      "id": "notice2",
       "title": "Presidential Debate Rescheduled",
       "content": "The Presidential debate scheduled for 8PM on 2/11/25 has been rescheduled to 11:30pm on 2/11/25 due to unforeseen circumstances.",
       "date": "2025-11-02T13:00:00Z",
       "pdf": "presidential-debate-rescheduled.pdf"
     },
     {
-      "id": "notice2",
+      "id": "notice3",
       "title": "Final Voter List",
       "content": "Please find the PDF of the final voter list.",
       "date": "2025-11-01T12:00:00Z",
       "pdf": "final-voter-list.pdf"
     },
     {
-      "id": "notice3",
+      "id": "notice4",
       "title": "Final List of Candidates",
       "content": "Please find the PDF for the final list of candidates.",
       "date": "2025-11-01T10:00:00Z",

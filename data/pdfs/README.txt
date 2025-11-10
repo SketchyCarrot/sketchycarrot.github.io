@@ -1,3 +1,4 @@
 - presidential-debate-rescheduled.pdf
 - final-voter-list.pdf
 - final-candidates-list.pdf
+- final-elected-candidates.pdf (ADD THIS PDF)

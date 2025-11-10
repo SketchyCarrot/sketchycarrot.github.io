@@ -1,21 +1,36 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SBT",
   "candidates": [
     {
       "id": "sbt1",
       "name": "RUBI SHEORAN",
-      "votes": 0
+      "votes": 65
     },
     {
       "id": "sbt2",
       "name": "SHYAM JYOTI",
-      "votes": 0
+      "votes": 68
     },
     {
       "id": "sbt3",
       "name": "SUBHOJIT GHOSH",
+      "votes": 56
+    },
+    {
+      "id": "sbt_nota",
+      "name": "NOTA",
+      "votes": 1
+    },
+    {
+      "id": "sbt_blank",
+      "name": "BLANK",
       "votes": 0
+    },
+    {
+      "id": "sbt_invalid",
+      "name": "INVALID",
+      "votes": 5
     }
   ]
 }

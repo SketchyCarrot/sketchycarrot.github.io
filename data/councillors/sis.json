@@ -1,91 +1,106 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SIS",
   "candidates": [
     {
       "id": "sis1",
       "name": "AASTHA SINGH",
-      "votes": 0
+      "votes": 204
     },
     {
       "id": "sis2",
       "name": "ABHIMANYU SHARMA",
-      "votes": 0
+      "votes": 198
     },
     {
       "id": "sis3",
       "name": "AKASH SINGH",
-      "votes": 0
+      "votes": 87
     },
     {
       "id": "sis4",
       "name": "BHOMA RAM",
-      "votes": 0
+      "votes": 217
     },
     {
       "id": "sis5",
       "name": "GOPAL KUMAR ROY",
-      "votes": 0
+      "votes": 96
     },
     {
       "id": "sis6",
       "name": "HARSH SHIVHARE",
-      "votes": 0
+      "votes": 213
     },
     {
       "id": "sis7",
       "name": "KARAN",
-      "votes": 0
+      "votes": 160
     },
     {
       "id": "sis8",
       "name": "MD MUSHARRAF",
-      "votes": 0
+      "votes": 198
     },
     {
       "id": "sis9",
       "name": "MOHD ASLAM",
-      "votes": 0
+      "votes": 229
     },
     {
       "id": "sis10",
       "name": "NEERAJ KUMAR",
-      "votes": 0
+      "votes": 208
     },
     {
       "id": "sis11",
       "name": "PRATEEK SINGH JHA",
-      "votes": 0
+      "votes": 111
     },
     {
       "id": "sis12",
       "name": "PURANJAI CHAUHAN",
-      "votes": 0
+      "votes": 246
     },
     {
       "id": "sis13",
       "name": "RAJSHREE DEWAL",
-      "votes": 0
+      "votes": 164
     },
     {
       "id": "sis14",
       "name": "RAVI RANJAN KUMAR",
-      "votes": 0
+      "votes": 188
     },
     {
       "id": "sis15",
       "name": "SAZIYA ASGAR",
-      "votes": 0
+      "votes": 154
     },
     {
       "id": "sis16",
       "name": "SHUBHAM KUMAR",
-      "votes": 0
+      "votes": 337
     },
     {
       "id": "sis17",
       "name": "SYEDA HAFSA BUKHARI",
+      "votes": 334
+    },
+    {
+      "id": "sis_nota",
+      "name": "NOTA",
+      "votes": 5
+    },
+    {
+      "id": "sis_blank",
+      "name": "BLANK",
       "votes": 0
+    },
+    {
+      "id": "sis_invalid",
+      "name": "INVALID",
+      "votes": 8
     }
   ]
 }

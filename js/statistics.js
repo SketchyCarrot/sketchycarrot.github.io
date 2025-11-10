@@ -187,8 +187,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (centralPanelChart && councillorChart) {
         loadStatistics();
         
-        // Refresh every 60 seconds
-        setInterval(loadStatistics, 60000);
+        // Auto-refresh disabled
+        // setInterval(loadStatistics, 60000);
     }
 });
 

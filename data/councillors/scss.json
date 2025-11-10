@@ -1,41 +1,56 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SCSS",
   "candidates": [
     {
       "id": "scss1",
       "name": "IRFANA ILIYAS",
-      "votes": 0
+      "votes": 96
     },
     {
       "id": "scss2",
       "name": "JOYES LUGUN",
-      "votes": 0
+      "votes": 89
     },
     {
       "id": "scss3",
       "name": "KRASHN KUMAR TRIPATHI",
-      "votes": 0
+      "votes": 114
     },
     {
       "id": "scss4",
       "name": "NITHIN KUMAR B T",
-      "votes": 0
+      "votes": 58
     },
     {
       "id": "scss5",
       "name": "SHIVAM",
-      "votes": 0
+      "votes": 105
     },
     {
       "id": "scss6",
       "name": "SHREYA SINGH",
-      "votes": 0
+      "votes": 101
     },
     {
       "id": "scss7",
       "name": "SHUBHAM MAHAWAR",
+      "votes": 13
+    },
+    {
+      "id": "scss_nota",
+      "name": "NOTA",
+      "votes": 1
+    },
+    {
+      "id": "scss_blank",
+      "name": "BLANK",
       "votes": 0
+    },
+    {
+      "id": "scss_invalid",
+      "name": "INVALID",
+      "votes": 2
     }
   ]
 }

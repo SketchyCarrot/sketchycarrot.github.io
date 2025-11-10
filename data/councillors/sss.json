@@ -1,101 +1,116 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SSS",
   "candidates": [
     {
       "id": "sss1",
       "name": "ABHISHEK KUMAR",
-      "votes": 0
+      "votes": 310
     },
     {
       "id": "sss2",
       "name": "AJIT MEENA",
-      "votes": 0
+      "votes": 491
     },
     {
       "id": "sss3",
       "name": "ASHUTOSH MAHOUR",
-      "votes": 0
+      "votes": 234
     },
     {
       "id": "sss4",
       "name": "DEEKSHA GIRI",
-      "votes": 0
+      "votes": 258
     },
     {
       "id": "sss5",
       "name": "GOWRI KOLAL",
-      "votes": 0
+      "votes": 735
     },
     {
       "id": "sss6",
       "name": "ISHAN SANJEEV THAKUR",
-      "votes": 0
+      "votes": 161
     },
     {
       "id": "sss7",
       "name": "JAYANT KUMAR",
-      "votes": 0
+      "votes": 311
     },
     {
       "id": "sss8",
       "name": "KOMAL DEVI",
-      "votes": 0
+      "votes": 537
     },
     {
       "id": "sss9",
       "name": "NANDANI KUMARI",
-      "votes": 0
+      "votes": 551
     },
     {
       "id": "sss10",
       "name": "PAKIZ KHAN",
-      "votes": 0
+      "votes": 552
     },
     {
       "id": "sss11",
       "name": "PRASHANT KUMAR SHUKLA",
-      "votes": 0
+      "votes": 261
     },
     {
       "id": "sss12",
       "name": "PRASHANT YADAV",
-      "votes": 0
+      "votes": 476
     },
     {
       "id": "sss13",
       "name": "RAHUL MOTGHARE",
-      "votes": 0
+      "votes": 206
     },
     {
       "id": "sss14",
       "name": "RAJ THAKUR",
-      "votes": 0
+      "votes": 316
     },
     {
       "id": "sss15",
       "name": "SHARVARI RAJENDRA PATIL",
-      "votes": 0
+      "votes": 320
     },
     {
       "id": "sss16",
       "name": "SUNIDHI CHOPRA",
-      "votes": 0
+      "votes": 451
     },
     {
       "id": "sss17",
       "name": "SURAJ KUMAR",
-      "votes": 0
+      "votes": 462
     },
     {
       "id": "sss18",
       "name": "UMESH YADAV",
-      "votes": 0
+      "votes": 145
     },
     {
       "id": "sss19",
       "name": "UTSA KAR",
-      "votes": 0
+      "votes": 614
+    },
+    {
+      "id": "sss_nota",
+      "name": "NOTA",
+      "votes": 4
+    },
+    {
+      "id": "sss_blank",
+      "name": "BLANK",
+      "votes": 1
+    },
+    {
+      "id": "sss_invalid",
+      "name": "INVALID",
+      "votes": 25
     }
   ]
 }

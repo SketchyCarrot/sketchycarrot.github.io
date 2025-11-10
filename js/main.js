@@ -70,10 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const tbody = document.createElement('tbody');
         
-        // Sort candidates by votes (highest first)
-        const sortedCandidates = [...candidates].sort((a, b) => b.votes - a.votes);
-        
-        sortedCandidates.forEach(candidate => {
+        // Keep candidates in original order (alphabetical with NOTA, BLANK, INVALID at end)
+        candidates.forEach(candidate => {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${candidate.name}</td>
@@ -208,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (centralContainer || councillorContainer) {
         loadResults();
         
-        // Set an interval to refresh the data every 60 seconds (60000 milliseconds)
-        setInterval(loadResults, 60000);
+        // Auto-refresh disabled
+        // setInterval(loadResults, 60000);
     }
 });

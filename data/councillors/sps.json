@@ -1,36 +1,51 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SPS",
   "candidates": [
     {
       "id": "sps1",
       "name": "ABHISHEK KUMAR",
-      "votes": 0
+      "votes": 127
     },
     {
       "id": "sps2",
       "name": "ASHISH SINGH",
-      "votes": 0
+      "votes": 98
     },
     {
       "id": "sps3",
       "name": "ISHITA SHUBHA",
-      "votes": 0
+      "votes": 103
     },
     {
       "id": "sps4",
       "name": "MANISHA SAINI",
-      "votes": 0
+      "votes": 75
     },
     {
       "id": "sps5",
       "name": "PRIYANSHU BAIRWA",
-      "votes": 0
+      "votes": 82
     },
     {
       "id": "sps6",
       "name": "PRIYANSHU SAROJ",
+      "votes": 99
+    },
+    {
+      "id": "sps_nota",
+      "name": "NOTA",
       "votes": 0
+    },
+    {
+      "id": "sps_blank",
+      "name": "BLANK",
+      "votes": 0
+    },
+    {
+      "id": "sps_invalid",
+      "name": "INVALID",
+      "votes": 7
     }
   ]
 }

@@ -1,111 +1,126 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SLL&CS",
   "candidates": [
     {
       "id": "sll1",
       "name": "ABHINAV KUSHWAHA",
-      "votes": 0
+      "votes": 251
     },
     {
       "id": "sll2",
       "name": "ANJALI",
-      "votes": 0
+      "votes": 512
     },
     {
       "id": "sll3",
       "name": "AXIT YADAV",
-      "votes": 0
+      "votes": 670
     },
     {
       "id": "sll4",
       "name": "BABLU KUMAR",
-      "votes": 0
+      "votes": 142
     },
     {
       "id": "sll5",
       "name": "CHHAIL SINGH",
-      "votes": 0
+      "votes": 778
     },
     {
       "id": "sll6",
       "name": "GAURAV SINGH",
-      "votes": 0
+      "votes": 487
     },
     {
       "id": "sll7",
       "name": "GULAM WARIS",
-      "votes": 0
+      "votes": 646
     },
     {
       "id": "sll8",
       "name": "HARDIK SINGH",
-      "votes": 0
+      "votes": 458
     },
     {
       "id": "sll9",
       "name": "KAIF KHAN",
-      "votes": 0
+      "votes": 635
     },
     {
       "id": "sll10",
       "name": "KASHISH RAJ",
-      "votes": 0
+      "votes": 548
     },
     {
       "id": "sll11",
       "name": "NISHANT PATHAK",
-      "votes": 0
+      "votes": 354
     },
     {
       "id": "sll12",
       "name": "PANKAJ KUMAR SHARMA",
-      "votes": 0
+      "votes": 223
     },
     {
       "id": "sll13",
       "name": "PRAGYA",
-      "votes": 0
+      "votes": 55
     },
     {
       "id": "sll14",
       "name": "RAHUL SINGH",
-      "votes": 0
+      "votes": 44
     },
     {
       "id": "sll15",
       "name": "RIMJHIM GUPTA",
-      "votes": 0
+      "votes": 343
     },
     {
       "id": "sll16",
       "name": "SARVJEET KAUR",
-      "votes": 0
+      "votes": 126
     },
     {
       "id": "sll17",
       "name": "SHIVAM KUMAR",
-      "votes": 0
+      "votes": 190
     },
     {
       "id": "sll18",
       "name": "SHREYA MEENA",
-      "votes": 0
+      "votes": 345
     },
     {
       "id": "sll19",
       "name": "SONU KUMAR",
-      "votes": 0
+      "votes": 471
     },
     {
       "id": "sll20",
       "name": "SYED SHAH FARAAZ HASAN",
-      "votes": 0
+      "votes": 411
     },
     {
       "id": "sll21",
       "name": "VAANI PRAGYA",
-      "votes": 0
+      "votes": 245
+    },
+    {
+      "id": "sll_nota",
+      "name": "NOTA",
+      "votes": 7
+    },
+    {
+      "id": "sll_blank",
+      "name": "BLANK",
+      "votes": 1
+    },
+    {
+      "id": "sll_invalid",
+      "name": "INVALID",
+      "votes": 30
     }
   ]
 }

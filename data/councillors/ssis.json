@@ -1,26 +1,41 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "SSIS",
   "candidates": [
     {
       "id": "ssis1",
       "name": "ANSH SRIVASTAVA",
-      "votes": 0
+      "votes": 146
     },
     {
       "id": "ssis2",
       "name": "DEEPALI JALANDRE",
-      "votes": 0
+      "votes": 137
     },
     {
       "id": "ssis3",
       "name": "RAVIRANJAN SHARMA",
-      "votes": 0
+      "votes": 115
     },
     {
       "id": "ssis4",
       "name": "SANJAY YADAV",
-      "votes": 0
+      "votes": 135
+    },
+    {
+      "id": "ssis_nota",
+      "name": "NOTA",
+      "votes": 1
+    },
+    {
+      "id": "ssis_blank",
+      "name": "BLANK",
+      "votes": 1
+    },
+    {
+      "id": "ssis_invalid",
+      "name": "INVALID",
+      "votes": 18
     }
   ]
 }

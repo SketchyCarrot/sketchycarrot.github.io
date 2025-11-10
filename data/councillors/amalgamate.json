@@ -1,31 +1,46 @@
 {
-  "lastUpdated": "2025-10-29T19:00:00Z",
+  "lastUpdated": "2025-11-10T12:00:00Z",
   "school": "Amalgamate",
   "candidates": [
     {
       "id": "amalg1",
       "name": "ADARSH SINGH",
-      "votes": 0
+      "votes": 33
     },
     {
       "id": "amalg2",
       "name": "NIKHIL GUVVADI",
-      "votes": 0
+      "votes": 34
     },
     {
       "id": "amalg3",
       "name": "PRAVEEN KUMAR",
-      "votes": 0
+      "votes": 35
     },
     {
       "id": "amalg4",
       "name": "SAM GABRIEL R",
-      "votes": 0
+      "votes": 31
     },
     {
       "id": "amalg5",
       "name": "TARUN RAJPUROHIT",
+      "votes": 40
+    },
+    {
+      "id": "amalg_nota",
+      "name": "NOTA",
       "votes": 0
+    },
+    {
+      "id": "amalg_blank",
+      "name": "BLANK",
+      "votes": 0
+    },
+    {
+      "id": "amalg_invalid",
+      "name": "INVALID",
+      "votes": 1
     }
   ]
 }
